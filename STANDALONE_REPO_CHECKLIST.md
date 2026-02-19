@@ -27,6 +27,21 @@ git push -u origin main
 
 ## 3. Publish to npm
 
+### Option A — Publish from GitHub Actions (recommended)
+
+1. **Add npm token to GitHub:**  
+   In this repo: **Settings → Secrets and variables → Actions** → **New repository secret**.  
+   - **Name:** `NPM_TOKEN`  
+   - **Value:** an npm access token with “Automation” or “Publish” permission (create at [npmjs.com → Access Tokens](https://www.npmjs.com/settings/~yourusername/tokens)).
+
+2. **Run the workflow:**  
+   - **Actions** → **Publish to npm** → **Run workflow**, or  
+   - Create a **Release** (publishing the release triggers the workflow).
+
+3. The workflow installs deps, builds, and runs `npm publish --access public`.
+
+### Option B — Publish from your machine
+
 1. **Log in to npm** (if needed):  
    `npm login`  
    Use your npm account (create one at npmjs.com if needed).
@@ -40,8 +55,7 @@ git push -u origin main
    `pnpm run build`
 
 4. **Publish (scoped package):**  
-   `npm publish --access public`  
-   (Use `--access public` if the scope is unscoped or you want the package to be public.)
+   `npm publish --access public`
 
 ## 4. Use from JanPAMS monorepo
 

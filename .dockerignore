@@ -1,0 +1,12 @@
+node_modules
+dist
+.npmrc
+.git
+*.log
+.DS_Store
+.idea
+.vscode
+*.local
+README.md
+STANDALONE_REPO_CHECKLIST.md
+DOCKER.md

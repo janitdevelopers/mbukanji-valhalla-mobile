@@ -2,7 +2,6 @@
   "name": "@jansoft/mbukanji-valhalla-mobile",
   "version": "0.1.0",
   "description": "Valhalla native routing for React Native (Android/iOS). Offline-first, pack parity with Web WASM.",
-  "private": true,
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
