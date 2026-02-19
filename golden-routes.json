@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "description": "Reference routes per region/profile for parity tests. Same request run on Web WASM and Mobile; compare output within parity-tolerance.json.",
+  "routes": [
+    {
+      "id": "CM-SW-auto-1",
+      "packId": "CM-SW",
+      "profile": "auto",
+      "start": { "lat": 4.15, "lon": 9.24 },
+      "end": { "lat": 4.16, "lon": 9.25 },
+      "expectedMinDistanceMeters": 1000,
+      "expectedMaxDistanceMeters": 50000,
+      "expectedMinPathPoints": 2
+    },
+    {
+      "id": "CM-SW-bicycle-1",
+      "packId": "CM-SW",
+      "profile": "bicycle",
+      "start": { "lat": 4.15, "lon": 9.24 },
+      "end": { "lat": 4.16, "lon": 9.25 },
+      "expectedMinDistanceMeters": 1000,
+      "expectedMaxDistanceMeters": 60000,
+      "expectedMinPathPoints": 2
+    },
+    {
+      "id": "CM-SW-pedestrian-1",
+      "packId": "CM-SW",
+      "profile": "pedestrian",
+      "start": { "lat": 4.15, "lon": 9.24 },
+      "end": { "lat": 4.155, "lon": 9.245 },
+      "expectedMinDistanceMeters": 500,
+      "expectedMaxDistanceMeters": 20000,
+      "expectedMinPathPoints": 2
+    }
+  ]
+}

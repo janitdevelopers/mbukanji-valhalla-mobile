@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "defaults": {
+    "distanceMeters": 25,
+    "distancePercent": 1.0,
+    "durationSeconds": 5,
+    "durationPercent": 2.0,
+    "shapeMaxDeviationMeters": 15,
+    "shapeMinSampledPoints": 50
+  },
+  "regions": {},
+  "profiles": {
+    "auto": {},
+    "bicycle": {
+      "distanceMeters": 50,
+      "durationPercent": 3.0,
+      "shapeMaxDeviationMeters": 20
+    },
+    "pedestrian": {
+      "distanceMeters": 30,
+      "durationPercent": 3.0,
+      "shapeMaxDeviationMeters": 25
+    }
+  }
+}
